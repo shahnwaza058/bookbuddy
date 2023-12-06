@@ -1,0 +1,77 @@
+.book-grid {
+  border: 1px solid #100f0f29;
+  border-radius: 5px;
+  font-size: 12px;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  margin-left: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.book-grid .book-image {
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.book-grid .book-image img {
+  height: auto;
+  transition: all 0.5s ease 0s;
+  background-position: center;
+  background-size: cover;
+}
+.book-grid:hover .book-image img {
+  transform: scale(1.1);
+}
+.book-grid .book-link {
+  margin: 0;
+  border-radius: 20px;
+  box-shadow: 1px 0 30px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateX(-50%) translateY(-150%);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transition: all 0.35s ease;
+}
+.book-grid:hover .book-link {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%);
+}
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+@media screen and (max-width: 990px) {
+  .book-grid {
+    margin-bottom: 30px;
+  }
+}
+
+.image-box {
+  width: 10rem;
+  height: 15rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.book-form > form {
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.223);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.121);
+}
+.lendbook-parent {
+  background: url("../Assets/modern-bookstore.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0;
+}
+.book-name:hover {
+  z-index: 1000;
+  color: #dc3545 !important;
+}
+.book-name>p{
+  cursor: pointer;
+}

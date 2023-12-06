@@ -1,0 +1,14 @@
+.right-section {
+  width: 50%;
+}
+.login-container {
+  background: rgba(0, 0, 0, 0.951);
+}
+.form-parent {
+  box-shadow: 14px -1px 20px 0px rgba(162, 157, 157, 0.16);
+}
+@media screen and (max-width: 768px) {
+  .right-section {
+    width: 100%;
+  }
+}

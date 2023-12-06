@@ -1,0 +1,32 @@
+.text-justify {
+  text-align: justify;
+  width: 75%;
+}
+.image-side > img {
+  padding: 1rem;
+  width: 80%;
+  mix-blend-mode: multiply;
+}
+.ls-wide {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+.ls-wide > span {
+  letter-spacing: 0;
+}
+.fs-12 {
+  font-size: 4px;
+}
+.home-container{
+  overflow-x: hidden;
+}
+.hero-container,
+.image-side,
+.article-heading {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .text-justify {
+    width: 100%;
+  }
+}

@@ -1,0 +1,57 @@
+.mybook-header {
+  background-image: linear-gradient(
+    45deg,
+    rgba(46, 44, 44, 0.729),
+    rgba(156, 10, 8, 0.255)
+  ),
+  url("../Assets/mybooks.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 13rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  opacity: 1;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.mybook-header:hover {
+  opacity: 0.95;
+}
+.lended-book {
+  background-image: linear-gradient(
+      45deg,
+      rgba(46, 44, 44, 0.729),
+      rgba(156, 10, 8, 0.255)
+    ),
+    url("../Assets/lended.png");
+}
+.borrowed-book {
+  background-image: linear-gradient(
+      45deg,
+      rgba(46, 44, 44, 0.729),
+      rgba(156, 10, 8, 0.255)
+    ),
+    url("../Assets/borrow.png");
+}
+.lended-book,
+.borrowed-book {
+  cursor: pointer;
+  height: 8rem;
+  width: 14rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.borrowed-book:hover {
+  opacity: 1;
+}
+.lended-book:hover {
+  opacity: 1;
+}
